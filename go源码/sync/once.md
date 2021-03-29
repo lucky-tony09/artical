@@ -144,7 +144,7 @@ func (o *Once) doSlow(f func()) {
 
 面试官：你知道`atomic.CompareAndSwapUint32(&o.done, 0, 1)`的作用是什么吗？
 
-考点：对sync包了解的广度
+考点：**对sync包了解的广度**
 
 超超：`CompareAndSwapUint32`简称CAS，通过原子操作判断当`o.done`值等于0时，使`o.done`等于1并返回`true`，当`o.done`值不等于0，直接返回`false`
 
